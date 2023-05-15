@@ -56,8 +56,7 @@
 		AE0D3DCF2A124D7E00E0F63B /* FoodOrderingApp */ = {
 			isa = PBXGroup;
 			children = (
-				AE0D3DD02A124D7E00E0F63B /* AppDelegate.swift */,
-				AE0D3DD22A124D7E00E0F63B /* SceneDelegate.swift */,
+				AE0D3DE42A12557B00E0F63B /* Delegate */,
 				AE0D3DD42A124D7E00E0F63B /* ViewController.swift */,
 				AE0D3DD62A124D7E00E0F63B /* Main.storyboard */,
 				AE0D3DD92A124D7F00E0F63B /* Assets.xcassets */,
@@ -65,6 +64,15 @@
 				AE0D3DDE2A124D7F00E0F63B /* Info.plist */,
 			);
 			path = FoodOrderingApp;
+			sourceTree = "<group>";
+		};
+		AE0D3DE42A12557B00E0F63B /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				AE0D3DD22A124D7E00E0F63B /* SceneDelegate.swift */,
+				AE0D3DD02A124D7E00E0F63B /* AppDelegate.swift */,
+			);
+			path = Delegate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
