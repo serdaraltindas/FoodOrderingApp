@@ -21,19 +21,51 @@
                                 <rect key="frame" x="0.0" y="59" width="393" height="618"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="USa-6d-Ibq">
-                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="itemSize" width="393" height="590"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="H5U-1h-uN2">
-                                        <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="590"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="X1S-o6-nCh">
-                                            <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="590"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Nlg-9b-7hF">
+                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="448"/>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="2OO-Dn-7Zb">
+                                                    <rect key="frame" x="16" y="448" width="361" height="126"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quick Delivery At Your Doorstep" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Tx-rc-C6I">
+                                                            <rect key="frame" x="62.666666666666671" y="0.0" width="235.66666666666663" height="74"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home delivery and Online reservation system for restaurants and cafes." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tEa-dF-6Yj">
+                                                            <rect key="frame" x="12.333333333333343" y="90" width="336.33333333333326" height="36"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <color key="textColor" systemColor="systemGrayColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Nlg-9b-7hF" firstAttribute="leading" secondItem="X1S-o6-nCh" secondAttribute="leading" id="02X-97-gW2"/>
+                                                <constraint firstItem="2OO-Dn-7Zb" firstAttribute="top" secondItem="Nlg-9b-7hF" secondAttribute="bottom" id="181-tN-hu1"/>
+                                                <constraint firstItem="Nlg-9b-7hF" firstAttribute="top" secondItem="X1S-o6-nCh" secondAttribute="top" id="Klb-EX-zpu"/>
+                                                <constraint firstAttribute="trailing" secondItem="Nlg-9b-7hF" secondAttribute="trailing" id="Yh2-Ex-sMK"/>
+                                                <constraint firstItem="2OO-Dn-7Zb" firstAttribute="leading" secondItem="X1S-o6-nCh" secondAttribute="leading" constant="16" id="ZKq-vD-yqu"/>
+                                                <constraint firstAttribute="trailing" secondItem="2OO-Dn-7Zb" secondAttribute="trailing" constant="16" id="nQw-5D-b5Y"/>
+                                                <constraint firstAttribute="bottom" secondItem="2OO-Dn-7Zb" secondAttribute="bottom" constant="16" id="zuT-2S-biG"/>
+                                            </constraints>
                                         </collectionViewCellContentView>
+                                        <size key="customSize" width="393" height="590"/>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -48,9 +80,17 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Next">
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="nextButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tiB-Rg-CVK"/>
+                                </connections>
                             </button>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="iK7-Hg-7Ii">
-                                <rect key="frame" x="138.66666666666666" y="677" width="116" height="26"/>
+                                <rect key="frame" x="138.66666666666666" y="677" width="115.66666666666666" height="26"/>
                                 <color key="pageIndicatorTintColor" systemColor="systemGrayColor"/>
                                 <color key="currentPageIndicatorTintColor" systemColor="systemRedColor"/>
                             </pageControl>
@@ -68,6 +108,11 @@
                             <constraint firstItem="jSm-w5-HDB" firstAttribute="top" secondItem="iK7-Hg-7Ii" secondAttribute="bottom" constant="25" id="uaf-gS-kwD"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="l73-YQ-gIj" id="9ke-X3-b1H"/>
+                        <outlet property="nextButton" destination="jSm-w5-HDB" id="78b-jG-0PO"/>
+                        <outlet property="pageControl" destination="iK7-Hg-7Ii" id="04v-w7-HBf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

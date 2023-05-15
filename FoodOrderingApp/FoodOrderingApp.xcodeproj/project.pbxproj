@@ -13,6 +13,9 @@
 		AE0D3DDA2A124D7F00E0F63B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE0D3DD92A124D7F00E0F63B /* Assets.xcassets */; };
 		AE0D3DDD2A124D7F00E0F63B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE0D3DDB2A124D7F00E0F63B /* LaunchScreen.storyboard */; };
 		AE0D3DEA2A125A7900E0F63B /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0D3DE92A125A7900E0F63B /* OnboardingViewController.swift */; };
+		AE0D3DED2A125E8600E0F63B /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0D3DEC2A125E8600E0F63B /* UIView+Extension.swift */; };
+		AE0D3DEF2A12601D00E0F63B /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0D3DEE2A12601D00E0F63B /* OnboardingSlide.swift */; };
+		AE0D3DF12A12631200E0F63B /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0D3DF02A12631200E0F63B /* OnboardingCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		AE0D3DDC2A124D7F00E0F63B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE0D3DDE2A124D7F00E0F63B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE0D3DE92A125A7900E0F63B /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		AE0D3DEC2A125E8600E0F63B /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		AE0D3DEE2A12601D00E0F63B /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
+		AE0D3DF02A12631200E0F63B /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,7 @@
 		AE0D3DCF2A124D7E00E0F63B /* FoodOrderingApp */ = {
 			isa = PBXGroup;
 			children = (
+				AE0D3DEB2A125E5A00E0F63B /* Extensions */,
 				AE0D3DE72A125A2C00E0F63B /* CustomViews */,
 				AE0D3DE62A125A2500E0F63B /* Views */,
 				AE0D3DE52A125A1E00E0F63B /* Models */,
@@ -80,6 +87,7 @@
 		AE0D3DE52A125A1E00E0F63B /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				AE0D3DEE2A12601D00E0F63B /* OnboardingSlide.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -103,8 +111,17 @@
 			isa = PBXGroup;
 			children = (
 				AE0D3DE92A125A7900E0F63B /* OnboardingViewController.swift */,
+				AE0D3DF02A12631200E0F63B /* OnboardingCollectionViewCell.swift */,
 			);
 			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		AE0D3DEB2A125E5A00E0F63B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AE0D3DEC2A125E8600E0F63B /* UIView+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,9 +195,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE0D3DEF2A12601D00E0F63B /* OnboardingSlide.swift in Sources */,
 				AE0D3DD12A124D7E00E0F63B /* AppDelegate.swift in Sources */,
 				AE0D3DD32A124D7E00E0F63B /* SceneDelegate.swift in Sources */,
+				AE0D3DED2A125E8600E0F63B /* UIView+Extension.swift in Sources */,
 				AE0D3DEA2A125A7900E0F63B /* OnboardingViewController.swift in Sources */,
+				AE0D3DF12A12631200E0F63B /* OnboardingCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
