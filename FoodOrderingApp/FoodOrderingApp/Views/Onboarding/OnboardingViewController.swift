@@ -11,9 +11,11 @@ class OnboardingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.collectionView.dataSource = self
-        self.collectionView.delegate = self
-                
+        slides = [
+        OnboardingSlide(title: "Delicious Dishes", description: "Experience a variety of amazing dishes from different cultures around the world.", image:UIImage(imageLiteralResourceName: "slide1")),
+        OnboardingSlide(title: "World-Class Chefs", description: "Our dishes are prepared by only the best.", image: UIImage(imageLiteralResourceName: "slide2")),
+        OnboardingSlide(title: "Instant World-Wide Delivery", description: "Your orders will be delivered instantly irrespective of your location around the world.", image: UIImage(imageLiteralResourceName: "slide3"))
+        ]
     }
     
     @IBAction func nextButtonClicked(_ sender: UIButton) {
@@ -21,7 +23,7 @@ class OnboardingViewController: UIViewController {
     }
 }
 
-extension OnboardingViewController : UICollectionViewDelegate, UICollectionViewDataSource {
+extension OnboardingViewController : UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return slides.count
     }
@@ -32,5 +34,7 @@ extension OnboardingViewController : UICollectionViewDelegate, UICollectionViewD
         return cell
     }
     
-    
+    override func size(forChildContentContainer container: UIContentContainer, withParentContainerSize parentSize: CGSize) -> CGSize {
+        return CGSize(width: collectionView.frame.width , height: collectionView.frame.height)
+    }
 }
