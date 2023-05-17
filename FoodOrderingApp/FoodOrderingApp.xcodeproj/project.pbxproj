@@ -16,6 +16,8 @@
 		AE0D3DED2A125E8600E0F63B /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0D3DEC2A125E8600E0F63B /* UIView+Extension.swift */; };
 		AE0D3DEF2A12601D00E0F63B /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0D3DEE2A12601D00E0F63B /* OnboardingSlide.swift */; };
 		AE0D3DF12A12631200E0F63B /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0D3DF02A12631200E0F63B /* OnboardingCollectionViewCell.swift */; };
+		AE317A392A14F50400AB9915 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = AE317A382A14F50400AB9915 /* Kingfisher */; };
+		AE317A3B2A14F57000AB9915 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE317A3A2A14F57000AB9915 /* String+Extension.swift */; };
 		AE5374AC2A13A0A4005CAFBE /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5374AA2A13A0A4005CAFBE /* CategoryCollectionViewCell.swift */; };
 		AE5374AD2A13A0A4005CAFBE /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE5374AB2A13A0A4005CAFBE /* CategoryCollectionViewCell.xib */; };
 		AE5374AF2A13A2AC005CAFBE /* DishCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5374AE2A13A2AC005CAFBE /* DishCategory.swift */; };
@@ -34,6 +36,7 @@
 		AE0D3DEC2A125E8600E0F63B /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		AE0D3DEE2A12601D00E0F63B /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
 		AE0D3DF02A12631200E0F63B /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
+		AE317A3A2A14F57000AB9915 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		AE5374AA2A13A0A4005CAFBE /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		AE5374AB2A13A0A4005CAFBE /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		AE5374AE2A13A2AC005CAFBE /* DishCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishCategory.swift; sourceTree = "<group>"; };
@@ -45,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE317A392A14F50400AB9915 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				AE0D3DEC2A125E8600E0F63B /* UIView+Extension.swift */,
+				AE317A3A2A14F57000AB9915 /* String+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -176,6 +181,9 @@
 			dependencies = (
 			);
 			name = FoodOrderingApp;
+			packageProductDependencies = (
+				AE317A382A14F50400AB9915 /* Kingfisher */,
+			);
 			productName = FoodOrderingApp;
 			productReference = AE0D3DCD2A124D7E00E0F63B /* FoodOrderingApp.app */;
 			productType = "com.apple.product-type.application";
@@ -204,6 +212,9 @@
 				Base,
 			);
 			mainGroup = AE0D3DC42A124D7E00E0F63B;
+			packageReferences = (
+				AE317A372A14F50400AB9915 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = AE0D3DCE2A124D7E00E0F63B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -240,6 +251,7 @@
 				AE0D3DEA2A125A7900E0F63B /* OnboardingViewController.swift in Sources */,
 				AEFEF4D02A136767005C8A66 /* HomeViewController.swift in Sources */,
 				AE5374AF2A13A2AC005CAFBE /* DishCategory.swift in Sources */,
+				AE317A3B2A14F57000AB9915 /* String+Extension.swift in Sources */,
 				AE0D3DF12A12631200E0F63B /* OnboardingCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -458,6 +470,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AE317A372A14F50400AB9915 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AE317A382A14F50400AB9915 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AE317A372A14F50400AB9915 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AE0D3DC52A124D7E00E0F63B /* Project object */;
 }
