@@ -14,12 +14,12 @@ class HomeViewController: UIViewController {
     ]
     
     var populars : [Dish] = [
-        .init(id: "id1", name: "KingSlayerKulhan", decription: "This is the best I have ever tasted", image: "https://picsum.photos/100/200", calories: 56.61234),
-        .init(id: "id1", name: "KingSlayerSerdar", decription: "This is the best I have ever tasted", image: "https://picsum.photos/100/200", calories: 36.61234),
-        .init(id: "id1", name: "KingSlayerKaan", decription: "This is the best I have ever tasted", image: "https://picsum.photos/100/200", calories: 26.61234),
-        .init(id: "id1", name: "KingSlayerSibel", decription: "This is the best I have ever tasted", image: "https://picsum.photos/100/200", calories: 56.61234),
-        .init(id: "id1", name: "KingSlayerHakan", decription: "This is the best I have ever tasted", image: "https://picsum.photos/100/200", calories: 66.61234),
-        .init(id: "id1", name: "KingSlayerZeynep", decription: "This is the best I have ever tasted", image: "https://picsum.photos/100/200", calories: 76.61234)
+        .init(id: "id1", name: "Serdar Altindas", decription: "This is the best I have ever tasted", image: "https://picsum.photos/100/200", calories: 56.61234),
+        .init(id: "id1", name: "Kaan Altindas", decription: "This is the best I have ever tasted", image: "https://picsum.photos/100/200", calories: 36.61234),
+        .init(id: "id1", name: "Zeynep Ozbagdatli", decription: "This is the best I have ever tasted", image: "https://picsum.photos/100/200", calories: 26.61234),
+        .init(id: "id1", name: "Sibel Altindas", decription: "This is the best I have ever tasted", image: "https://picsum.photos/100/200", calories: 56.61234),
+        .init(id: "id1", name: "Hakan Yılmaz", decription: "This is the best I have ever tasted", image: "https://picsum.photos/100/200", calories: 66.61234),
+        .init(id: "id1", name: "Umut Arinç", decription: "This is the best I have ever tasted", image: "https://picsum.photos/100/200", calories: 76.61234)
     ]
     
     override func viewDidLoad() {
