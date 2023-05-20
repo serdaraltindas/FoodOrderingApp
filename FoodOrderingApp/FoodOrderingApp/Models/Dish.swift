@@ -3,9 +3,9 @@ import Foundation
 
 struct Dish {
     let id , name , decription , image: String?
-    let calories: Double?
+    let calories: Int?
     
     var formattedCalories: String {
-        return String(format: "%.2f calories", calories ?? 0)
+        return "\(calories ?? 0) Calories"
     }
 }
