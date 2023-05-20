@@ -14,7 +14,12 @@ class HomeViewController: UIViewController {
     ]
     
     var populars : [Dish] = [
-        .init(id: "", name: "", decription: "", image: "", calories: 0.0)
+        .init(id: "id1", name: "KingSlayerKulhan", decription: "This is the best I have ever tasted", image: "https://picsum.photos/100/200", calories: 56.61234),
+        .init(id: "id1", name: "KingSlayerSerdar", decription: "This is the best I have ever tasted", image: "https://picsum.photos/100/200", calories: 36.61234),
+        .init(id: "id1", name: "KingSlayerKaan", decription: "This is the best I have ever tasted", image: "https://picsum.photos/100/200", calories: 26.61234),
+        .init(id: "id1", name: "KingSlayerSibel", decription: "This is the best I have ever tasted", image: "https://picsum.photos/100/200", calories: 56.61234),
+        .init(id: "id1", name: "KingSlayerHakan", decription: "This is the best I have ever tasted", image: "https://picsum.photos/100/200", calories: 66.61234),
+        .init(id: "id1", name: "KingSlayerZeynep", decription: "This is the best I have ever tasted", image: "https://picsum.photos/100/200", calories: 76.61234)
     ]
     
     override func viewDidLoad() {
@@ -30,12 +35,28 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return categories.count
+        switch collectionView {
+        case categoryColletcionView:
+            return categories.count
+        case popoularCollectionView:
+            return populars.count
+        default: return 0
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CategoryCollectionViewCell.identifier, for: indexPath) as! CategoryCollectionViewCell
-        cell.setup(category: categories[indexPath.row])
-        return cell
+        switch collectionView {
+        case categoryColletcionView:
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CategoryCollectionViewCell.identifier, for: indexPath) as! CategoryCollectionViewCell
+            cell.setup(category: categories[indexPath.row])
+            return cell
+        case popoularCollectionView:
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: DishPortraitCollectionViewCell.identifier, for: indexPath) as! DishPortraitCollectionViewCell
+            cell.setup(dish: populars[indexPath.row])
+            return cell
+        default: return UICollectionViewCell()
+        }
+        
+        
     }
 }
