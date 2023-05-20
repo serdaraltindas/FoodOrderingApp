@@ -8,7 +8,9 @@
 import UIKit
 
 class HomeViewController: UIViewController {
+    
     @IBOutlet weak var categoryColletcionView: UICollectionView!
+    @IBOutlet weak var popoularCollectionView: UICollectionView!
     
     var categories: [DishCategory] = [
         .init(id: "id1", name: "Africa Dish", image: "https://picsum.photos/100/200"),
@@ -18,6 +20,11 @@ class HomeViewController: UIViewController {
         .init(id: "id1", name: "Africa Dish4", image: "https://picsum.photos/100/200"),
         .init(id: "id1", name: "Africa Dish5", image: "https://picsum.photos/100/200"),
     ]
+    
+    var populars : [Dish] = [
+    
+    
+    ]
     override func viewDidLoad() {
         super.viewDidLoad()
         registerCells()
@@ -25,6 +32,7 @@ class HomeViewController: UIViewController {
     
     private func registerCells() {
         categoryColletcionView.register(UINib(nibName: CategoryCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: CategoryCollectionViewCell.identifier)
+        popoularCollectionView.register(UINib(nibName: DishPortraitCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: DishPortraitCollectionViewCell.identifier)
     }
 }
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
