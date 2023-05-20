@@ -1,14 +1,6 @@
-//
-//  DishPortraitCollectionViewCell.swift
-//  FoodOrderingApp
-//
-//  Created by Serdar Altındaş on 20.05.2023.
-//
-
 import UIKit
 
 class DishPortraitCollectionViewCell: UICollectionViewCell {
-    
     static let identifier = "DishPortraitCollectionViewCell"
     
     @IBOutlet weak var titleLabel: UILabel!

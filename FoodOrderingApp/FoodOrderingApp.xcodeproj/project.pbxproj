@@ -87,9 +87,7 @@
 				AE0D3DE62A125A2500E0F63B /* Views */,
 				AE0D3DE52A125A1E00E0F63B /* Models */,
 				AE0D3DE42A12557B00E0F63B /* Delegate */,
-				AE0D3DD62A124D7E00E0F63B /* Main.storyboard */,
-				AE0D3DD92A124D7F00E0F63B /* Assets.xcassets */,
-				AE0D3DDB2A124D7F00E0F63B /* LaunchScreen.storyboard */,
+				AE77C7A62A193A61005D0DB6 /* Support */,
 				AE0D3DDE2A124D7F00E0F63B /* Info.plist */,
 			);
 			path = FoodOrderingApp;
@@ -183,6 +181,16 @@
 				AE77C7A12A18AE22005D0DB6 /* DishPortraitCollectionViewCell.xib */,
 			);
 			path = DishPortraitCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		AE77C7A62A193A61005D0DB6 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				AE0D3DD62A124D7E00E0F63B /* Main.storyboard */,
+				AE0D3DD92A124D7F00E0F63B /* Assets.xcassets */,
+				AE0D3DDB2A124D7F00E0F63B /* LaunchScreen.storyboard */,
+			);
+			path = Support;
 			sourceTree = "<group>";
 		};
 		AEFEF4CE2A136744005C8A66 /* Home */ = {
