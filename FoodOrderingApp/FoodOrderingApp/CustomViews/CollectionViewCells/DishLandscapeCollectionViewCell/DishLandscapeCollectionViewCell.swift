@@ -16,6 +16,9 @@ class DishLandscapeCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var caloriesLabel: UILabel!
     
-    
-
+    func setup() {
+        
+    }
 }
+
+
