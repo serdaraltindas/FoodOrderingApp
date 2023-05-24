@@ -6,12 +6,12 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var chefsSpecialCollectionView: UICollectionView!
     
     var categories: [DishCategory] = [
-        .init(id: "id1", name: "AfricanFood1", image: "https://picsum.photos/100/200"),
-        .init(id: "id1", name: "AfricanFood2", image: "https://picsum.photos/100/200"),
-        .init(id: "id1", name: "AfricanFood3", image: "https://picsum.photos/100/200"),
-        .init(id: "id1", name: "AfricanFood4", image: "https://picsum.photos/100/200"),
-        .init(id: "id1", name: "AfricanFood5", image: "https://picsum.photos/100/200"),
-        .init(id: "id1", name: "AfricanFood6", image: "https://picsum.photos/100/200"),
+        .init(id: "id1", name: "African Food", image: "https://picsum.photos/100/200"),
+        .init(id: "id1", name: "Turkish Food", image: "https://picsum.photos/100/200"),
+        .init(id: "id1", name: "Italian Food", image: "https://picsum.photos/100/200"),
+        .init(id: "id1", name: "American Food", image: "https://picsum.photos/100/200"),
+        .init(id: "id1", name: "France Food", image: "https://picsum.photos/100/200"),
+        .init(id: "id1", name: "Germany Food", image: "https://picsum.photos/100/200"),
     ]
     
     var populars : [Dish] = [
