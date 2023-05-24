@@ -74,4 +74,13 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         default: return UICollectionViewCell()
         }
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if collectionView == categoryColletcionView {
+            
+        } else {
+            let controller = DishDetailViewController.instantiate()
+            navigationController?.present(controller, animated: true)
+        }
+    }
 }
