@@ -337,10 +337,10 @@
             </objects>
             <point key="canvasLocation" x="1672.5190839694656" y="-35.211267605633807"/>
         </scene>
-        <!--View Controller-->
+        <!--Dish Detail View Controller-->
         <scene sceneID="ewy-BG-fyL">
             <objects>
-                <viewController id="giO-cz-zB8" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DishDetailViewController" id="giO-cz-zB8" customClass="DishDetailViewController" customModule="FoodOrderingApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="elq-Mw-Maw">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -407,6 +407,9 @@
                                                 <real key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="placeOrderButtonClicked:" destination="giO-cz-zB8" eventType="touchUpInside" id="iL8-w2-5Ru"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -423,6 +426,13 @@
                             <constraint firstItem="7Xa-g7-O5J" firstAttribute="trailing" secondItem="ALs-iL-zdg" secondAttribute="trailing" constant="16" id="sHJ-Bg-szb"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="caloriesLabel" destination="yxj-lh-quh" id="DS3-tc-agV"/>
+                        <outlet property="descriptionLabel" destination="itf-wE-oQU" id="eXX-Zj-7MT"/>
+                        <outlet property="dishImageView" destination="Ugw-Rl-NRK" id="9mI-OO-iJ0"/>
+                        <outlet property="nameTextField" destination="cEX-Z4-mei" id="ZSy-02-YOC"/>
+                        <outlet property="titleLabel" destination="vMY-Gq-Vji" id="EaP-lh-TiL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dZI-Ys-ORj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
