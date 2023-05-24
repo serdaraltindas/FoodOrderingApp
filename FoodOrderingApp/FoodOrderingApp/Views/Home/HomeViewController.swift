@@ -17,7 +17,7 @@ class HomeViewController: UIViewController {
     var populars : [Dish] = [
         .init(id: "id1", name: "Serdar Altindas", decription: "This is the best I have ever tasted", image: "https://picsum.photos/100/200", calories: 56),
         .init(id: "id1", name: "Kaan Altindas", decription: "This is the best I have ever tasted", image: "https://picsum.photos/100/200", calories: 36),
-        .init(id: "id1", name: "Zeynep Ozbagdatli", decription: "This is the best I have ever tasted,This is the best I have ever tasted,This is the best I have ever tasted,This is the best I have ever tasted", image: "https://picsum.photos/100/200", calories: 26),
+        .init(id: "id1", name: "Zeynep Ozbagdatli", decription: "This is the best I have ever tasted,This is the best I have ever tasted,This is the best I have ever tasted,This is the best I have ever tasted,This is the best I have ever tasted,This is the best I have ever tasted,This is the best I have ever tasted,This is the best I have ever tasted,This is the best I have ever tasted,This is the best I have ever tasted,This is the best I have ever tasted", image: "https://picsum.photos/100/200", calories: 26),
         .init(id: "id1", name: "Sibel Altindas", decription: "This is the best I have ever tasted", image: "https://picsum.photos/100/200", calories: 56),
         .init(id: "id1", name: "Hakan Yılmaz", decription: "This is the best I have ever tasted", image: "https://picsum.photos/100/200", calories: 66),
         .init(id: "id1", name: "Umut Arinç", decription: "This is the best I have ever tasted", image: "https://picsum.photos/100/200", calories: 76)
