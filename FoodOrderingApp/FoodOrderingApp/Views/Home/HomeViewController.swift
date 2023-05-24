@@ -6,12 +6,12 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var chefsSpecialCollectionView: UICollectionView!
     
     var categories: [DishCategory] = [
-        .init(id: "id1", name: "Africa Dish0", image: "https://picsum.photos/100/200"),
-        .init(id: "id1", name: "Africa Dish1", image: "https://picsum.photos/100/200"),
-        .init(id: "id1", name: "Africa Dish2", image: "https://picsum.photos/100/200"),
-        .init(id: "id1", name: "Africa Dish3", image: "https://picsum.photos/100/200"),
-        .init(id: "id1", name: "Africa Dish4", image: "https://picsum.photos/100/200"),
-        .init(id: "id1", name: "Africa Dish5", image: "https://picsum.photos/100/200"),
+        .init(id: "id1", name: "AfricanFood1", image: "https://picsum.photos/100/200"),
+        .init(id: "id1", name: "AfricanFood2", image: "https://picsum.photos/100/200"),
+        .init(id: "id1", name: "AfricanFood3", image: "https://picsum.photos/100/200"),
+        .init(id: "id1", name: "AfricanFood4", image: "https://picsum.photos/100/200"),
+        .init(id: "id1", name: "AfricanFood5", image: "https://picsum.photos/100/200"),
+        .init(id: "id1", name: "AfricanFood6", image: "https://picsum.photos/100/200"),
     ]
     
     var populars : [Dish] = [
@@ -24,9 +24,9 @@ class HomeViewController: UIViewController {
     ]
     
     var specials: [Dish] = [
-        .init(id: "id1", name: "Fried Fries", decription: "This is my favorite Fried Fries", image: "https://picsum.photos/100/200", calories: 960),
-        .init(id: "id1", name: "Onion Rings", decription: "This is my favorite Onion Rings", image: "https://picsum.photos/100/200", calories: 667),
-        .init(id: "id1", name: "Tomatato Sose", decription: "This is my favorite Tomato Sos", image: "https://picsum.photos/100/200", calories: 769)
+        .init(id: "id1", name: "Kalamar", decription: "This is my favorite Fried Fries", image: "https://picsum.photos/100/200", calories: 960),
+        .init(id: "id1", name: "Tavuk Pilav", decription: "This is my favorite Onion Rings", image: "https://picsum.photos/100/200", calories: 667),
+        .init(id: "id1", name: "Yaprak Sarma", decription: "This is my favorite Tomato Sos", image: "https://picsum.photos/100/200", calories: 769)
     ]
     
     override func viewDidLoad() {
