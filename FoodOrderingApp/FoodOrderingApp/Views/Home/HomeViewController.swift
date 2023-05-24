@@ -31,12 +31,16 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        chefsSpecialCollectionView.dataSource = self
+        chefsSpecialCollectionView.delegate = self
         registerCells()
+       
     }
     
     private func registerCells() {
-        categoryColletcionView.register(UINib(nibName: CategoryCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: CategoryCollectionViewCell.identifier)
-        popoularCollectionView.register(UINib(nibName: DishPortraitCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: DishPortraitCollectionViewCell.identifier)
+    categoryColletcionView.register(UINib(nibName:CategoryCollectionViewCell.identifier, bundle: nil),forCellWithReuseIdentifier: CategoryCollectionViewCell.identifier)
+    popoularCollectionView.register(UINib(nibName:DishPortraitCollectionViewCell.identifier, bundle: nil),forCellWithReuseIdentifier: DishPortraitCollectionViewCell.identifier)
+    chefsSpecialCollectionView.register(UINib(nibName:DishLandscapeCollectionViewCell.identifier, bundle: nil),forCellWithReuseIdentifier: DishLandscapeCollectionViewCell.identifier)
     }
 }
 
@@ -47,6 +51,8 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             return categories.count
         case popoularCollectionView:
             return populars.count
+        case chefsSpecialCollectionView:
+            return specials.count
         default: return 0
         }
     }
@@ -61,9 +67,11 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: DishPortraitCollectionViewCell.identifier, for: indexPath) as! DishPortraitCollectionViewCell
             cell.setup(dish: populars[indexPath.row])
             return cell
+        case chefsSpecialCollectionView:
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: DishLandscapeCollectionViewCell.identifier, for: indexPath) as! DishLandscapeCollectionViewCell
+            cell.setup(dish: specials[indexPath.row])
+            return cell
         default: return UICollectionViewCell()
         }
-        
-        
     }
 }
