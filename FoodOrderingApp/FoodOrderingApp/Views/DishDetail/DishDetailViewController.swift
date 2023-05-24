@@ -1,10 +1,3 @@
-//
-//  DishDetailViewController.swift
-//  FoodOrderingApp
-//
-//  Created by Serdar Altındaş on 24.05.2023.
-//
-
 import UIKit
 
 class DishDetailViewController: UIViewController {
@@ -22,5 +15,4 @@ class DishDetailViewController: UIViewController {
     @IBAction func placeOrderButtonClicked(_ sender: UIButton) {
         
     }
-    
 }
