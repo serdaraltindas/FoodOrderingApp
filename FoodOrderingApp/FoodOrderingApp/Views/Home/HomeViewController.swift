@@ -3,6 +3,7 @@ import UIKit
 class HomeViewController: UIViewController {
     @IBOutlet weak var categoryColletcionView: UICollectionView!
     @IBOutlet weak var popoularCollectionView: UICollectionView!
+    @IBOutlet weak var chefsSpecialCollectionView: UICollectionView!
     
     var categories: [DishCategory] = [
         .init(id: "id1", name: "Africa Dish0", image: "https://picsum.photos/100/200"),
@@ -20,6 +21,12 @@ class HomeViewController: UIViewController {
         .init(id: "id1", name: "Sibel Altindas", decription: "This is the best I have ever tasted", image: "https://picsum.photos/100/200", calories: 56),
         .init(id: "id1", name: "Hakan Yılmaz", decription: "This is the best I have ever tasted", image: "https://picsum.photos/100/200", calories: 66),
         .init(id: "id1", name: "Umut Arinç", decription: "This is the best I have ever tasted", image: "https://picsum.photos/100/200", calories: 76)
+    ]
+    
+    var specials: [Dish] = [
+        .init(id: "id1", name: "Fried Fries", decription: "This is my favorite Fried Fries", image: "https://picsum.photos/100/200", calories: 960),
+        .init(id: "id1", name: "Onion Rings", decription: "This is my favorite Onion Rings", image: "https://picsum.photos/100/200", calories: 667),
+        .init(id: "id1", name: "Tomatato Sose", decription: "This is my favorite Tomato Sos", image: "https://picsum.photos/100/200", calories: 769)
     ]
     
     override func viewDidLoad() {

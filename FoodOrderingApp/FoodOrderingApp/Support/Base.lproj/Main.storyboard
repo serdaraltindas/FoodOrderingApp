@@ -328,6 +328,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="categoryColletcionView" destination="Fg7-xl-UQh" id="ssR-yO-AeX"/>
+                        <outlet property="chefsSpecialCollectionView" destination="9T4-Gz-XUn" id="TOP-OK-NXH"/>
                         <outlet property="popoularCollectionView" destination="GE6-rx-jn4" id="VQ2-zD-sQp"/>
                     </connections>
                 </viewController>
