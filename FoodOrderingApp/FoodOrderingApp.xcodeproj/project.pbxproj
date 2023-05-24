@@ -119,6 +119,7 @@
 		AE0D3DE62A125A2500E0F63B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AE0E3A8E2A1E2E1A0031C4E9 /* DishDetail */,
 				AEFEF4CE2A136744005C8A66 /* Home */,
 				AE0D3DE82A125A4E00E0F63B /* Onboarding */,
 			);
@@ -150,6 +151,13 @@
 				AE317A3A2A14F57000AB9915 /* String+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AE0E3A8E2A1E2E1A0031C4E9 /* DishDetail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DishDetail;
 			sourceTree = "<group>";
 		};
 		AE5374A62A13A035005CAFBE /* CollectionViewCells */ = {
