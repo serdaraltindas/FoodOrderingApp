@@ -36,7 +36,7 @@ class HomeViewController: UIViewController {
         registerCells()
        
     }
-    
+  
     private func registerCells() {
     categoryColletcionView.register(UINib(nibName:CategoryCollectionViewCell.identifier, bundle: nil),forCellWithReuseIdentifier: CategoryCollectionViewCell.identifier)
     popoularCollectionView.register(UINib(nibName:DishPortraitCollectionViewCell.identifier, bundle: nil),forCellWithReuseIdentifier: DishPortraitCollectionViewCell.identifier)
