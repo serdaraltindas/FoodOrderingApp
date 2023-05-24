@@ -6,12 +6,17 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var chefsSpecialCollectionView: UICollectionView!
     
     var categories: [DishCategory] = [
-        .init(id: "id1", name: "African Food", image: "https://picsum.photos/100/200"),
-        .init(id: "id1", name: "Turkish Food", image: "https://picsum.photos/100/200"),
-        .init(id: "id1", name: "Italian Food", image: "https://picsum.photos/100/200"),
-        .init(id: "id1", name: "American Food", image: "https://picsum.photos/100/200"),
-        .init(id: "id1", name: "France Food", image: "https://picsum.photos/100/200"),
-        .init(id: "id1", name: "Germany Food", image: "https://picsum.photos/100/200"),
+        .init(id: "id1", name: "African", image: "https://picsum.photos/100/200"),
+        .init(id: "id1", name: "Turkish", image: "https://picsum.photos/100/200"),
+        .init(id: "id1", name: "Italian", image: "https://picsum.photos/100/200"),
+        .init(id: "id1", name: "American", image: "https://picsum.photos/100/200"),
+        .init(id: "id1", name: "France", image: "https://picsum.photos/100/200"),
+        .init(id: "id1", name: "Germany", image: "https://picsum.photos/100/200"),
+        .init(id: "id1", name: "Bulgarian", image: "https://picsum.photos/100/200"),
+        .init(id: "id1", name: "Russian", image: "https://picsum.photos/100/200"),
+        .init(id: "id1", name: "Spanish", image: "https://picsum.photos/100/200"),
+        .init(id: "id1", name: "Chinese", image: "https://picsum.photos/100/200"),
+        .init(id: "id1", name: "Korean", image: "https://picsum.photos/100/200"),
     ]
     
     var populars : [Dish] = [

@@ -43,13 +43,13 @@
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U0F-jf-xpw">
                                         <rect key="frame" x="0.0" y="21.333333333333336" width="214" height="21.333333333333336"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <color key="textColor" systemColor="systemGrayColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lFm-iT-A4c">
                                         <rect key="frame" x="0.0" y="42.666666666666664" width="214" height="21.333333333333336"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
                                         <color key="textColor" red="0.87846535439999995" green="0.22957882290000001" blue="0.0018210088600000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
