@@ -438,10 +438,10 @@
             </objects>
             <point key="canvasLocation" x="2389" y="-35"/>
         </scene>
-        <!--View Controller-->
+        <!--List Dishes View Controller-->
         <scene sceneID="x6b-wY-XrL">
             <objects>
-                <viewController id="GdM-Nb-eU2" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ListDishesViewController" id="GdM-Nb-eU2" customClass="ListDishesViewController" customModule="FoodOrderingApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vT7-f5-uii">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -464,6 +464,9 @@
                             <constraint firstItem="Za2-4a-hhF" firstAttribute="top" secondItem="T5m-Ft-30x" secondAttribute="top" id="EOG-xP-uau"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="Za2-4a-hhF" id="2Sr-KC-OKe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g5S-3T-V4Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
