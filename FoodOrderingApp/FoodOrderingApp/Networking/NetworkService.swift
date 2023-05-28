@@ -2,7 +2,7 @@
 import Foundation
 
 struct NetworkService {
-    private func createRequest(route: Route,
+    public func createRequest(route: Route,
                                method: Method,
                                parameters: [String: Any]? = nil) -> URLRequest? {
         let urlString = Route.baseUrl + route.description
