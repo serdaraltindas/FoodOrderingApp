@@ -22,6 +22,9 @@
 		AE1DD7292A20B98C00E7D356 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1DD7282A20B98C00E7D356 /* Order.swift */; };
 		AE317A392A14F50400AB9915 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = AE317A382A14F50400AB9915 /* Kingfisher */; };
 		AE317A3B2A14F57000AB9915 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE317A3A2A14F57000AB9915 /* String+Extension.swift */; };
+		AE33514C2A236EBD007D87DF /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE33514B2A236EBD007D87DF /* NetworkService.swift */; };
+		AE33514E2A236F94007D87DF /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE33514D2A236F94007D87DF /* Route.swift */; };
+		AE3351502A23707F007D87DF /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE33514F2A23707F007D87DF /* Method.swift */; };
 		AE5374AC2A13A0A4005CAFBE /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5374AA2A13A0A4005CAFBE /* CategoryCollectionViewCell.swift */; };
 		AE5374AD2A13A0A4005CAFBE /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE5374AB2A13A0A4005CAFBE /* CategoryCollectionViewCell.xib */; };
 		AE5374AF2A13A2AC005CAFBE /* DishCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5374AE2A13A2AC005CAFBE /* DishCategory.swift */; };
@@ -54,6 +57,9 @@
 		AE1DD7262A20B74500E7D356 /* ListOrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOrdersViewController.swift; sourceTree = "<group>"; };
 		AE1DD7282A20B98C00E7D356 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		AE317A3A2A14F57000AB9915 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		AE33514B2A236EBD007D87DF /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		AE33514D2A236F94007D87DF /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		AE33514F2A23707F007D87DF /* Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
 		AE5374AA2A13A0A4005CAFBE /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		AE5374AB2A13A0A4005CAFBE /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		AE5374AE2A13A2AC005CAFBE /* DishCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishCategory.swift; sourceTree = "<group>"; };
@@ -100,6 +106,7 @@
 		AE0D3DCF2A124D7E00E0F63B /* FoodOrderingApp */ = {
 			isa = PBXGroup;
 			children = (
+				AE33514A2A236EA7007D87DF /* Networking */,
 				AE0D3DEB2A125E5A00E0F63B /* Extensions */,
 				AE0D3DE72A125A2C00E0F63B /* CustomViews */,
 				AE0D3DE62A125A2500E0F63B /* Views */,
@@ -186,6 +193,16 @@
 				AE1DD7262A20B74500E7D356 /* ListOrdersViewController.swift */,
 			);
 			path = ListOrders;
+			sourceTree = "<group>";
+		};
+		AE33514A2A236EA7007D87DF /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				AE33514B2A236EBD007D87DF /* NetworkService.swift */,
+				AE33514D2A236F94007D87DF /* Route.swift */,
+				AE33514F2A23707F007D87DF /* Method.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		AE5374A62A13A035005CAFBE /* CollectionViewCells */ = {
@@ -365,11 +382,14 @@
 				AE0D3DEF2A12601D00E0F63B /* OnboardingSlide.swift in Sources */,
 				AE0D3DD12A124D7E00E0F63B /* AppDelegate.swift in Sources */,
 				AE0D3DD32A124D7E00E0F63B /* SceneDelegate.swift in Sources */,
+				AE3351502A23707F007D87DF /* Method.swift in Sources */,
 				AE0D3DED2A125E8600E0F63B /* UIView+Extension.swift in Sources */,
 				AE0D3DEA2A125A7900E0F63B /* OnboardingViewController.swift in Sources */,
 				AE0E3A902A1E2EB00031C4E9 /* DishDetailViewController.swift in Sources */,
 				AEFEF4D02A136767005C8A66 /* HomeViewController.swift in Sources */,
 				AE5374AF2A13A2AC005CAFBE /* DishCategory.swift in Sources */,
+				AE33514E2A236F94007D87DF /* Route.swift in Sources */,
+				AE33514C2A236EBD007D87DF /* NetworkService.swift in Sources */,
 				AED2944C2A1BF07E0099C493 /* DishLandscapeCollectionViewCell.swift in Sources */,
 				AE317A3B2A14F57000AB9915 /* String+Extension.swift in Sources */,
 				AE77C79E2A18A5CA005D0DB6 /* CardView.swift in Sources */,
