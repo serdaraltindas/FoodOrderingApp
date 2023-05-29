@@ -2,7 +2,32 @@
 import Foundation
 
 struct NetworkService {
-    public func createRequest(route: Route,
+    
+    private func request<T: Codable>(route: Route,
+                                     method: Method,
+                                     parameters: [String: Any]? = nil,
+                                     type: T.Type,
+                                     completion: (Result<T,Error>) -> Void) {
+        guard let request = createRequest(route: route, method: method, parameters: parameters) else {
+            completion(.failure(AppError.unknownError))
+            return}
+        
+        URLSession.shared.dataTask(with: request) { data, response, error in
+            var result : Result<Data,Error>?
+            if let data = data {
+                result = .success(data)
+                let responseString = String(data: data, encoding: .utf8) ?? "Could not strigify out data!"
+                print("The response is :\(responseString)")
+            }else if let error = error {
+                result = .failure(error)
+                print("The error is : \(error.localizedDescription)")
+            }
+            DispatchQueue.main.async {
+                <#code#>
+            }
+        }.resume()
+    }
+    private func createRequest(route: Route,
                                method: Method,
                                parameters: [String: Any]? = nil) -> URLRequest? {
         let urlString = Route.baseUrl + route.description
