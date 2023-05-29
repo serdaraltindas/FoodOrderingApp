@@ -37,6 +37,8 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
        
+        NetworkService.shared.myFirstRequest()
+        
         chefsSpecialCollectionView.dataSource = self
         chefsSpecialCollectionView.delegate = self
         registerCells()

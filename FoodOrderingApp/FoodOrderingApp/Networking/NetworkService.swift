@@ -7,7 +7,7 @@ struct NetworkService {
     private init() {}
     
     func myFirstRequest() {
-        request(route: .temp, method: .get, type: String.self, completion: <#T##(Result<Decodable & Encodable, Error>) -> Void#>)
+        request(route: .temp, method: .get, type: String.self, completion: { _ in})
     }
     
     private func request<T: Codable>(route: Route,
@@ -27,10 +27,10 @@ struct NetworkService {
                 print("The response is :\(responseString)")
             }else if let error = error {
                 result = .failure(error)
-                print("The error is : \(error.localizedDescription)")
+                print("The error is:\n\(error.localizedDescription)")
             }
             DispatchQueue.main.async {
-                <#code#>
+                //
             }
         }.resume()
     }
