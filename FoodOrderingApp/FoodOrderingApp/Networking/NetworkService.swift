@@ -7,7 +7,7 @@ struct NetworkService {
     private init() {}
     
     func myFirstRequest() {
-        request(route: .temp, method: .get, type: <#T##(Decodable & Encodable).Protocol#>, completion: <#T##(Result<Decodable & Encodable, Error>) -> Void#>)
+        request(route: .temp, method: .get, type: String.self, completion: <#T##(Result<Decodable & Encodable, Error>) -> Void#>)
     }
     
     private func request<T: Codable>(route: Route,
