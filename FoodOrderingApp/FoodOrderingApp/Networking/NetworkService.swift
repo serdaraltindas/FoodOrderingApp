@@ -3,6 +3,13 @@ import Foundation
 
 struct NetworkService {
     
+    static let shared = NetworkService()
+    private init() {}
+    
+    func myFirstRequest() {
+        request(route: .temp, method: .get, type: <#T##(Decodable & Encodable).Protocol#>, completion: <#T##(Result<Decodable & Encodable, Error>) -> Void#>)
+    }
+    
     private func request<T: Codable>(route: Route,
                                      method: Method,
                                      parameters: [String: Any]? = nil,
