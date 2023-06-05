@@ -1,14 +1,6 @@
-//
-//  CardView.swift
-//  FoodOrderingApp
-//
-//  Created by Serdar Altındaş on 20.05.2023.
-//
-
 import UIKit
 
 class CardView: UIView {
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
         initialSetup()

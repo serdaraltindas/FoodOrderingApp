@@ -1,4 +1,3 @@
-
 import Foundation
 
 enum Route {
@@ -7,7 +6,6 @@ enum Route {
     var description: String {
         switch self {
         case .temp: return "/dish-categories"
-            
         }
     }
 }

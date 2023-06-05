@@ -1,10 +1,3 @@
-//
-//  DishListTableViewCell.swift
-//  FoodOrderingApp
-//
-//  Created by Serdar Altındaş on 25.05.2023.
-//
-
 import UIKit
 
 class DishListTableViewCell: UITableViewCell {
@@ -18,6 +11,7 @@ class DishListTableViewCell: UITableViewCell {
         titleLabel.text = dish.name
         descriptionLabel.text = dish.decription
     }
+    
     func setup(order: Order) {
         dishImageView.kf.setImage(with: order.dish?.image?.asUrl)
         titleLabel.text = order.dish?.name
