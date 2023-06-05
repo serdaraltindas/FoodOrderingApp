@@ -4,14 +4,13 @@ struct NetworkService {
     static let shared = NetworkService()
     private init() {}
     
-    func myFirstRequest() {
-        request(route: .temp, method: .get, type: String.self, completion: { _ in})
+    func myFirstRequest(completion: @escaping (Result<String, Error>) -> Void) {
+        request(route: .temp, method: .get, completion: completion)
     }
     private func request<T: Codable>(route: Route,
                                      method: Method,
                                      parameters: [String: Any]? = nil,
-                                     type: T.Type,
-                                     completion: (Result<T,Error>) -> Void) {
+                                     completion: @escaping(Result<T,Error>) -> Void) {
         guard let request = createRequest(route: route, method: method, parameters: parameters) else {
             completion(.failure(AppError.unknownError))
             return}
@@ -27,7 +26,7 @@ struct NetworkService {
                 print("The error is:\n\(error.localizedDescription)")
             }
             DispatchQueue.main.async {
-                //
+                self.handleResponse(result: result, completion: completion)
             }
         }.resume()
     }
@@ -47,6 +46,12 @@ struct NetworkService {
             }
             if let error = response.error {
                 completion(.failure(AppError.serverError(error)))
+                return
+            }
+            if let decodedData = response.data {
+                completion(.success(decodedData))
+            }else {
+                completion(.failure(AppError.errorDecoding))
             }
         case .failure(let error):
             completion(.failure(error))
