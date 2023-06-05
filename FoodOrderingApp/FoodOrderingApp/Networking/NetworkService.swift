@@ -31,6 +31,28 @@ struct NetworkService {
             }
         }.resume()
     }
+    
+    private func handleResponse<T: Decodable>(result:Result<Data,Error>?,completion:(Result<T,Error>) -> Void){
+        guard let result = result else {
+            completion(.failure(AppError.unknownError))
+            return
+        }
+        
+        switch result {
+        case .success(let data):
+            let decoder = JSONDecoder()
+            guard let response = try? decoder.decode(ApiResponse<T>.self, from: data) else {
+                completion(.failure(AppError.errorDecoding))
+                return
+            }
+            if let error = response.error {
+                completion(.failure(AppError.serverError(error)))
+            }
+        case .failure(let error):
+            completion(.failure(error))
+        }
+}
+    
     private func createRequest(route: Route,
                                method: Method,
                                parameters: [String: Any]? = nil) -> URLRequest? {

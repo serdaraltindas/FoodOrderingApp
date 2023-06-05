@@ -35,6 +35,7 @@
 		AE77C7A52A18B172005D0DB6 /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE77C7A42A18B172005D0DB6 /* Dish.swift */; };
 		AED2944C2A1BF07E0099C493 /* DishLandscapeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED2944A2A1BF07E0099C493 /* DishLandscapeCollectionViewCell.swift */; };
 		AED2944D2A1BF07E0099C493 /* DishLandscapeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AED2944B2A1BF07E0099C493 /* DishLandscapeCollectionViewCell.xib */; };
+		AEE8C61E2A2E59F30056D0BF /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE8C61D2A2E59F30056D0BF /* ApiResponse.swift */; };
 		AEF020632A1FEDF5007A59C5 /* DishListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF020612A1FEDF5007A59C5 /* DishListTableViewCell.swift */; };
 		AEF020642A1FEDF5007A59C5 /* DishListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEF020622A1FEDF5007A59C5 /* DishListTableViewCell.xib */; };
 		AEF020672A1FFDA0007A59C5 /* ListDishesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF020662A1FFDA0007A59C5 /* ListDishesViewController.swift */; };
@@ -71,6 +72,7 @@
 		AE77C7A42A18B172005D0DB6 /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
 		AED2944A2A1BF07E0099C493 /* DishLandscapeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishLandscapeCollectionViewCell.swift; sourceTree = "<group>"; };
 		AED2944B2A1BF07E0099C493 /* DishLandscapeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishLandscapeCollectionViewCell.xib; sourceTree = "<group>"; };
+		AEE8C61D2A2E59F30056D0BF /* ApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
 		AEF020612A1FEDF5007A59C5 /* DishListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishListTableViewCell.swift; sourceTree = "<group>"; };
 		AEF020622A1FEDF5007A59C5 /* DishListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishListTableViewCell.xib; sourceTree = "<group>"; };
 		AEF020662A1FFDA0007A59C5 /* ListDishesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDishesViewController.swift; sourceTree = "<group>"; };
@@ -204,6 +206,7 @@
 				AE33514D2A236F94007D87DF /* Route.swift */,
 				AE33514F2A23707F007D87DF /* Method.swift */,
 				AE20E2372A252D0500421D2B /* AppError.swift */,
+				AEE8C61D2A2E59F30056D0BF /* ApiResponse.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -390,6 +393,7 @@
 				AE0D3DEA2A125A7900E0F63B /* OnboardingViewController.swift in Sources */,
 				AE0E3A902A1E2EB00031C4E9 /* DishDetailViewController.swift in Sources */,
 				AEFEF4D02A136767005C8A66 /* HomeViewController.swift in Sources */,
+				AEE8C61E2A2E59F30056D0BF /* ApiResponse.swift in Sources */,
 				AE5374AF2A13A2AC005CAFBE /* DishCategory.swift in Sources */,
 				AE33514E2A236F94007D87DF /* Route.swift in Sources */,
 				AE33514C2A236EBD007D87DF /* NetworkService.swift in Sources */,
