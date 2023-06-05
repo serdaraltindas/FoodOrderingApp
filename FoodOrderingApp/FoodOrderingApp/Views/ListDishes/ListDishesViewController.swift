@@ -1,12 +1,9 @@
-
 import UIKit
 
 class ListDishesViewController: UIViewController {
-    
     @IBOutlet weak var tableView: UITableView!
     
     var category: DishCategory!
-    
     var dishes : [Dish] = [
         .init(id: "id1", name: "Kuru Fasulye", decription: "This is the best I have ever tasted", image: "https://picsum.photos/100/200", calories: 56),
         .init(id: "id1", name: "Çiğ Köfte", decription: "This is the best I have ever tasted", image: "https://picsum.photos/100/200", calories: 36),
@@ -15,7 +12,7 @@ class ListDishesViewController: UIViewController {
         .init(id: "id1", name: "Mantı", decription: "This is the best I have ever tasted", image: "https://picsum.photos/100/200", calories: 66),
         .init(id: "id1", name: "Köfte", decription: "This is the best I have ever tasted", image: "https://picsum.photos/100/200", calories: 76)
     ]
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = category.name
@@ -27,7 +24,6 @@ class ListDishesViewController: UIViewController {
 }
 
 extension ListDishesViewController: UITableViewDelegate, UITableViewDataSource {
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dishes.count
     }

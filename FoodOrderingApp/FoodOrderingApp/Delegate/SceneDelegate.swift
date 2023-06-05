@@ -1,10 +1,3 @@
-//
-//  SceneDelegate.swift
-//  FoodOrderingApp
-//
-//  Created by Serdar Altındaş on 15.05.2023.
-//
-
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {

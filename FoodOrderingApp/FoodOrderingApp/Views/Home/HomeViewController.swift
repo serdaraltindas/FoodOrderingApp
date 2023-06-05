@@ -36,19 +36,17 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
         NetworkService.shared.myFirstRequest()
         
         chefsSpecialCollectionView.dataSource = self
         chefsSpecialCollectionView.delegate = self
         registerCells()
-       
     }
-  
+    
     private func registerCells() {
-    categoryColletcionView.register(UINib(nibName:CategoryCollectionViewCell.identifier, bundle: nil),forCellWithReuseIdentifier: CategoryCollectionViewCell.identifier)
-    popoularCollectionView.register(UINib(nibName:DishPortraitCollectionViewCell.identifier, bundle: nil),forCellWithReuseIdentifier: DishPortraitCollectionViewCell.identifier)
-    chefsSpecialCollectionView.register(UINib(nibName:DishLandscapeCollectionViewCell.identifier, bundle: nil),forCellWithReuseIdentifier: DishLandscapeCollectionViewCell.identifier)
+        categoryColletcionView.register(UINib(nibName:CategoryCollectionViewCell.identifier, bundle: nil),forCellWithReuseIdentifier: CategoryCollectionViewCell.identifier)
+        popoularCollectionView.register(UINib(nibName:DishPortraitCollectionViewCell.identifier, bundle: nil),forCellWithReuseIdentifier: DishPortraitCollectionViewCell.identifier)
+        chefsSpecialCollectionView.register(UINib(nibName:DishLandscapeCollectionViewCell.identifier, bundle: nil),forCellWithReuseIdentifier: DishLandscapeCollectionViewCell.identifier)
     }
 }
 

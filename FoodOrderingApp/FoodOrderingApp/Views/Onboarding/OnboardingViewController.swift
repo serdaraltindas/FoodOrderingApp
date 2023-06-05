@@ -1,8 +1,6 @@
-
 import UIKit
 
 class OnboardingViewController: UIViewController {
-    
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var nextButton: UIButton!
@@ -21,7 +19,7 @@ class OnboardingViewController: UIViewController {
     }
     
     override func viewDidLoad() {
-        super.viewDidLoad() 
+        super.viewDidLoad()
         slides = [
             OnboardingSlide(title: "Delicious Dishes", description: "Experience a variety of amazing dishes from different cultures around the world.", image:UIImage(imageLiteralResourceName: "slide1")),
             OnboardingSlide(title: "World-Class Chefs", description: "Our dishes are prepared by only the best.", image: UIImage(imageLiteralResourceName: "slide2")),
