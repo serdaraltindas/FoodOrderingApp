@@ -4,10 +4,10 @@ struct NetworkService {
     static let shared = NetworkService()
     private init() {}
     
-    func myFirstRequest(completion: @escaping (Result<String, Error>) -> Void) {
+    func myFirstRequest(completion: @escaping (Result<[Dish], Error>) -> Void) {
         request(route: .temp, method: .get, completion: completion)
     }
-    private func request<T: Codable>(route: Route,
+    private func request<T: Decodable>(route: Route,
                                      method: Method,
                                      parameters: [String: Any]? = nil,
                                      completion: @escaping(Result<T,Error>) -> Void) {
@@ -20,7 +20,7 @@ struct NetworkService {
             if let data = data {
                 result = .success(data)
                 let responseString = String(data: data, encoding: .utf8) ?? "Could not strigify out data!"
-                print("The response is :\(responseString)")
+                //print("The response is :\(responseString)")
             }else if let error = error {
                 result = .failure(error)
                 print("The error is:\n\(error.localizedDescription)")

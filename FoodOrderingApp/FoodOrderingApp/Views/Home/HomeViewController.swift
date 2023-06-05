@@ -39,7 +39,9 @@ class HomeViewController: UIViewController {
         NetworkService.shared.myFirstRequest { (result) in
             switch result {
             case .success(let data):
-                print("Data is: \(data)")
+                for dish in data {
+                    print(dish.name ?? "")
+                }
             case .failure(let error):
                 print("Error is: \(error.localizedDescription)")
             }
